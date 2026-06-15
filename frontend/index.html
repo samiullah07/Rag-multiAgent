@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RAG System</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="chat">
+    <form id="chat-form">
+      <div class="controls">
+        <select id="mode-select">
+          <option value="multi_agent">Multi-Agent</option>
+          <option value="baseline">Baseline</option>
+          <option value="compare">Compare Both</option>
+        </select>
+
+        <select id="strategy-select">
+          <option value="most_recent">Most Recent</option>
+          <option value="most_authoritative">Most Authoritative</option>
+          <option value="explain_both">Explain Both</option>
+        </select>
+
+        <input type="number" id="topk-input" value="5" min="1" max="20" />
+        <select id="model-select">
+          <option value="llama3-70b-8192">Llama3-70B</option>
+          <option value="llama3-8b-8192">Llama3-8B</option>
+        </select>
+      </div>
+
+      <div class="input-row">
+        <input type="text" id="chat-input" placeholder="Ask a question..." />
+        <button id="send-btn" type="submit">Send</button>
+      </div>
+    </form>
+
+    <div id="error-banner"></div>
+
+    <div id="messages"></div>
+    <div id="evidence"></div>
+
+    <button id="theme-toggle">Toggle Theme</button>
+  </div>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/evidence.js"></script>
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>
