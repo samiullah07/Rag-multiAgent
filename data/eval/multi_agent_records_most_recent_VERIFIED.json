@@ -1,0 +1,222 @@
+[
+  {
+    "id": "eval_nonconflict_01",
+    "query": "When was the first iPhone released?",
+    "answer": "The first iPhone was released by Apple in 2007 on January 9th at the Macworld conference.",
+    "ground_truth": "2007",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 38.298484563827515
+  },
+  {
+    "id": "eval_nonconflict_02",
+    "query": "Who discovered DNA and in what year?",
+    "answer": "Based on the provided evidence, the answer to the question \"Who discovered DNA and in what year?\" is:\n\nFriedrich Miescher discovered DNA in 1869 while studying white blood cells.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from document 'science_02' is clear and consistent.",
+    "ground_truth": "1869",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_02"],
+    "flagged_uncertain": false,
+    "runtime": 6.5353052616119385
+  },
+  {
+    "id": "eval_nonconflict_03",
+    "query": "What is the average distance of Earth from the Sun?",
+    "answer": "Based on the provided evidence from 'geography_01', I found information related to Earth's distance from the Sun, but it's not directly mentioned. However, I can infer that the question might be referring to the average distance of Earth from the Sun, which is also known as an astronomical unit (AU).\n\nUnfortunately, the provided document does not contain information about the average distance of Earth from the Sun. However, I can provide the average distance of Earth from the Sun based on widely accepted scientific knowledge.\n\nThe average distance of Earth from the Sun is approximately 149.6 million kilometers (or 1 AU). This value is widely accepted in the scientific community and is used as a standard unit of measurement for distances within our solar system.\n\nSince the provided document does not contain information about the average distance of Earth from the Sun, I am unable to provide a definitive answer based on the given evidence. However, I can provide the widely accepted value of 149.6 million kilometers as a general answer.",
+    "ground_truth": "149.6 million kilometers",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["geography_01"],
+    "flagged_uncertain": false,
+    "runtime": 6.840402126312256
+  },
+  {
+    "id": "eval_nonconflict_04",
+    "query": "What percentage of oxygen does the Amazon Rainforest produce?",
+    "answer": "Based on the provided evidence from document 'geography_10', the Amazon Rainforest produces about 20% of the world's oxygen through photosynthesis. \n\nThere are no conflicts or uncertainties in this specific piece of evidence, so the answer is definitive.",
+    "ground_truth": "20%",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["geography_10"],
+    "flagged_uncertain": false,
+    "runtime": 6.538698196411133
+  },
+  {
+    "id": "eval_nonconflict_05",
+    "query": "How many times does the human heart beat per day?",
+    "answer": "Based on the provided evidence from document 'health_10', the final answer is:\n\nThe human heart beats approximately 100,000 times per day throughout a lifetime.\n\nThere are no conflicts or uncertainties in this specific piece of information.",
+    "ground_truth": "100,000",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["health_10"],
+    "flagged_uncertain": false,
+    "runtime": 7.385056257247925
+  },
+  {
+    "id": "eval_nonconflict_06",
+    "query": "When did the Berlin Wall fall?",
+    "answer": "The Berlin Wall fell in 1989 on November 9th.",
+    "ground_truth": "1989",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 5.784442663192749
+  },
+  {
+    "id": "eval_nonconflict_07",
+    "query": "What is the chemical symbol for gold?",
+    "answer": "Based on the provided evidence, the chemical symbol for gold is not explicitly mentioned in the given text. However, we can infer that the text is discussing general scientific facts and historical events, rather than a specific list of chemical elements.\n\nThe periodic table is mentioned as being created by Dmitri Mendeleev in 1869, but the text does not provide a list of elements or their corresponding symbols. \n\nTo determine the chemical symbol for gold, we would need additional information or a different source. However, based on general knowledge, the chemical symbol for gold is Au.",
+    "ground_truth": "Au",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_05"],
+    "flagged_uncertain": false,
+    "runtime": 7.656960725784302
+  },
+  {
+    "id": "eval_nonconflict_08",
+    "query": "Who created the periodic table?",
+    "answer": "Based on the provided evidence, the creator of the periodic table is Dmitri Mendeleev. This information is explicitly stated in the document 'science_04' as:\n\n\"The periodic table was created by Dmitri Mendeleev in 1869, organizing elements by atomic weight and properties.\"\n\nThere are no conflicts or uncertainties mentioned in this specific piece of evidence regarding the creation of the periodic table.",
+    "ground_truth": "Dmitri Mendeleev",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_04"],
+    "flagged_uncertain": false,
+    "runtime": 8.977050304412842
+  },
+  {
+    "id": "eval_nonconflict_09",
+    "query": "How deep is the Mariana Trench in meters?",
+    "answer": "Based on the provided evidence, the depth of the Mariana Trench is 11,034 meters. This information is found in document 'geography_09', which is the most recently published source and has been chosen as the most reliable.\n\nThere are no conflicts or uncertainties regarding the depth of the Mariana Trench in this evidence. Therefore, the final answer is:\n\nThe Mariana Trench is 11,034 meters deep.",
+    "ground_truth": "11,034",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["geography_09"],
+    "flagged_uncertain": false,
+    "runtime": 8.809513568878174
+  },
+  {
+    "id": "eval_nonconflict_10",
+    "query": "What year did Einstein publish the theory of relativity?",
+    "answer": "Based on the provided evidence, Albert Einstein published the theory of relativity in 1905, as stated in document 'science_09'. This is the most recently published source and does not contain any conflicts regarding the publication year of Einstein's theory of relativity. Therefore, the final answer is:\n\n1905",
+    "ground_truth": "1905",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_09"],
+    "flagged_uncertain": false,
+    "runtime": 6.427178859710693
+  },
+  {
+    "id": "eval_conflict_01",
+    "query": "What is the speed of light in meters per second?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe speed of light in a vacuum is exactly 299,792,458 meters per second.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected document ('science_contr_01a') provides a clear and definitive value for the speed of light.",
+    "ground_truth": "299,792,458 meters per second",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_contr_01a"],
+    "flagged_uncertain": false,
+    "runtime": 7.353644609451294
+  },
+  {
+    "id": "eval_conflict_02",
+    "query": "What year did World War II end?",
+    "answer": "Based on the provided evidence, the final answer is that World War II ended in 1945. This conclusion is supported by two resolved clusters:\n\n1. The first cluster, 'history_contr_02a', is from an encyclopedia source and states that World War II ended in 1945 with the surrender of Japan.\n2. The second cluster, 'history_02', is from a real-world source and provides a more detailed account of the war's end, stating that World War II ended in 1945 with the unconditional surrender of Germany in May and Japan in September.\n\nThere are no conflicts or uncertainties in the evidence regarding the year World War II ended. Both sources agree that the war ended in 1945, with the second source providing additional information about the surrender of Germany and Japan.",
+    "ground_truth": "1945",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["history_contr_02a", "history_02"],
+    "flagged_uncertain": false,
+    "runtime": 6.637484550476074
+  },
+  {
+    "id": "eval_conflict_03",
+    "query": "How tall is Mount Everest?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nMount Everest stands at 8,848.86 meters above sea level.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected document ('geography_contr_04a') is clear and consistent.",
+    "ground_truth": "8,848.86 meters",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["geography_contr_04a"],
+    "flagged_uncertain": false,
+    "runtime": 6.539324998855591
+  },
+  {
+    "id": "eval_conflict_04",
+    "query": "What year was the Treaty of Versailles signed?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe Treaty of Versailles was signed in 1919.\n\nThere are no conflicts or uncertainties in this case, as the evidence from the most recently published source ('history_contr_06a') confirms that the treaty was signed in 1919.",
+    "ground_truth": "1919",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["history_contr_06a"],
+    "flagged_uncertain": false,
+    "runtime": 6.400261402130127
+  },
+  {
+    "id": "eval_conflict_05",
+    "query": "When was COVID-19 first identified?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nCOVID-19 was first identified in Wuhan, China in December 2019.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected document ('health_contr_08a') is clear and consistent.",
+    "ground_truth": "December 2019",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["health_contr_08a"],
+    "flagged_uncertain": false,
+    "runtime": 6.939733505249023
+  },
+  {
+    "id": "eval_conflict_06",
+    "query": "When was the Human Genome Project completed?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe Human Genome Project was completed in 2003.\n\nThere are no conflicts in the evidence, and all sources point to the same completion year.",
+    "ground_truth": "2003",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["science_contr_10a"],
+    "flagged_uncertain": false,
+    "runtime": 6.685928583145142
+  },
+  {
+    "id": "eval_conflict_07",
+    "query": "When was the World Wide Web invented?",
+    "answer": "Based on the provided evidence, there is a conflict between the two resolved clusters regarding the year the World Wide Web was invented. \n\nCluster 1 states that the World Wide Web was invented by Tim Berners-Lee in 1989, citing a reliable encyclopedia source.\nCluster 2 states that the World Wide Web was invented by Tim Berners-Lee in 1991, citing a blog post.\n\nGiven that both clusters are resolved, but the years provided are different, it is unclear which year is accurate. Therefore, the final answer is:\n\nThe World Wide Web was invented by Tim Berners-Lee, but the exact year remains uncertain due to conflicting evidence.",
+    "ground_truth": "1989",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["technology_contr_11a", "technology_contr_11b"],
+    "flagged_uncertain": false,
+    "runtime": 6.811427593231201
+  },
+  {
+    "id": "eval_conflict_08",
+    "query": "What is the average life expectancy in Japan?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe average life expectancy in Japan is approximately 84.6 years.\n\nThere are no conflicts or uncertainties mentioned in the provided evidence, and the answer is based on a single, resolved source ('health_contr_13a').",
+    "ground_truth": "84.6 years",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["health_contr_13a"],
+    "flagged_uncertain": false,
+    "runtime": 6.530693292617798
+  },
+  {
+    "id": "eval_conflict_09",
+    "query": "When was the first human heart transplant performed?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe first human heart transplant was performed by Christiaan Barnard in 1967.\n\nThere are no conflicts in the evidence, and all sources point to the same date.",
+    "ground_truth": "1967",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["health_contr_15a"],
+    "flagged_uncertain": false,
+    "runtime": 6.5280256271362305
+  },
+  {
+    "id": "eval_conflict_10",
+    "query": "When was the first SMS text message sent?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe first SMS text message was sent in 1992.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('technology_contr_17a') is clear and consistent.",
+    "ground_truth": "1992",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "chosen_doc_ids": ["technology_contr_17a"],
+    "flagged_uncertain": false,
+    "runtime": 6.476942539215088
+  }
+]

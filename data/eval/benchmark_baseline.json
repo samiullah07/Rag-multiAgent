@@ -1,0 +1,16 @@
+{
+  "answer_accuracy": 0.9,
+  "in_kb_accuracy": 1.0,
+  "appropriate_refusal_rate": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "resolution_quality": null,
+  "confusion": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "tn": 10
+  },
+  "n": 20
+}

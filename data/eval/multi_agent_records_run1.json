@@ -1,0 +1,930 @@
+[
+  {
+    "id": "eval_nonconflict_01",
+    "query": "When was the first iPhone released?",
+    "answer": "The first iPhone was released by Apple in 2007 on January 9th at the Macworld conference.",
+    "ground_truth": "2007",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents.",
+    "fabricated_citations": [],
+    "runtime": 91.74377512931824
+  },
+  {
+    "id": "eval_nonconflict_02",
+    "query": "Who discovered DNA and in what year?",
+    "answer": "DNA was first discovered by Friedrich Miescher in 1869 while studying white blood cells.",
+    "ground_truth": "1869",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 10.945820093154907
+  },
+  {
+    "id": "eval_nonconflict_03",
+    "query": "What is the average distance of Earth from the Sun?",
+    "answer": "Unfortunately, the provided context does not contain information about the average distance of Earth from the Sun.",
+    "ground_truth": "149.6 million kilometers",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, as they do not contain any information about the average distance of Earth from the Sun.",
+    "fabricated_citations": [],
+    "runtime": 10.004502773284912
+  },
+  {
+    "id": "eval_nonconflict_04",
+    "query": "What percentage of oxygen does the Amazon Rainforest produce?",
+    "answer": "The Amazon Rainforest produces about 20% of the world's oxygen through photosynthesis.",
+    "ground_truth": "20%",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents, which all mention that the Amazon Rainforest produces about 20% of the world's oxygen through photosynthesis.",
+    "fabricated_citations": [],
+    "runtime": 10.19131851196289
+  },
+  {
+    "id": "eval_nonconflict_05",
+    "query": "How many times does the human heart beat per day?",
+    "answer": "The human heart beats about 100,000 times per day throughout a lifetime.",
+    "ground_truth": "100,000",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by all the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 7.608391046524048
+  },
+  {
+    "id": "eval_nonconflict_06",
+    "query": "When did the Berlin Wall fall?",
+    "answer": "The Berlin Wall fell in 1989 on November 9th.",
+    "ground_truth": "1989",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 8.603180170059204
+  },
+  {
+    "id": "eval_nonconflict_07",
+    "query": "What is the chemical symbol for gold?",
+    "answer": "Unfortunately, the provided context does not mention the chemical symbol for gold. The context only covers various aspects of science, including physical constants, astronomical facts, biological information, and historical scientific discoveries.",
+    "ground_truth": "Au",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer states that the context does not mention the chemical symbol for gold, which is factually correct.",
+    "fabricated_citations": [],
+    "runtime": 13.252925872802734
+  },
+  {
+    "id": "eval_nonconflict_08",
+    "query": "Who created the periodic table?",
+    "answer": "The periodic table was created by Dmitri Mendeleev in 1869, organizing elements by atomic weight and properties.",
+    "ground_truth": "Dmitri Mendeleev",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is supported by the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 17.27260994911194
+  },
+  {
+    "id": "eval_nonconflict_09",
+    "query": "How deep is the Mariana Trench in meters?",
+    "answer": "The Mariana Trench is the deepest part of the world's oceans, reaching 11,034 meters deep.",
+    "ground_truth": "11,034",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents, which mention the Mariana Trench's depth as 11,034 meters.",
+    "fabricated_citations": [],
+    "runtime": 15.424138069152832
+  },
+  {
+    "id": "eval_nonconflict_10",
+    "query": "What year did Einstein publish the theory of relativity?",
+    "answer": "Albert Einstein published the theory of relativity in 1905 in his annus mirabilis papers.",
+    "ground_truth": "1905",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents, which mention that Albert Einstein published the theory of relativity in 1905 in his annus mirabilis papers.",
+    "fabricated_citations": [],
+    "runtime": 18.046940803527832
+  },
+  {
+    "id": "eval_conflict_01",
+    "query": "What is the speed of light in meters per second?",
+    "answer": "Based on the provided evidence, the speed of light in meters per second is approximately 300,000,000 meters per second.\n\nHowever, I would like to note that there is a discrepancy in the numeric value. Another document (not included in the resolved cluster) provides a value of 299,792,458 meters per second. This conflict remains unresolved.\n\nTherefore, the final answer is 300,000,000 meters per second, but with the caveat that there may be a more precise value of 299,792,458 meters per second that is also valid.",
+    "ground_truth": "299,792,458 meters per second",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_01a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_01b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically the mention of another document with a conflicting value.",
+    "fabricated_citations": [],
+    "runtime": 9.38858151435852
+  },
+  {
+    "id": "eval_conflict_02",
+    "query": "What year did World War II end?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nWorld War II ended in 1945 with the surrender of Japan.\n\nThere are no conflicts or uncertainties in this case, as the evidence is consistent and clearly states that the war ended in 1945.",
+    "ground_truth": "1945",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_02a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_02a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the documents, specifically Doc id=history_contr_02a and Doc id=history_contr_02a, and Doc id=history_02.",
+    "fabricated_citations": [],
+    "runtime": 10.81325626373291
+  },
+  {
+    "id": "eval_conflict_03",
+    "query": "How tall is Mount Everest?",
+    "answer": "Based on the provided evidence, the height of Mount Everest is consistently reported as 8,848.86 meters above sea level across multiple sources. \n\nThere are no conflicts in the resolved clusters, and both sources ('geography_contr_04a' and 'geography_10') agree on the height of Mount Everest. Therefore, the final answer is:\n\nMount Everest stands at 8,848.86 meters above sea level.",
+    "ground_truth": "8,848.86 meters",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "geography_contr_04a"
+    ],
+    "chosen_doc_ids": [
+      "geography_contr_04a",
+      "geography_10"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically 'geography_contr_04a', 'geography_contr_04a', and 'geography_10'.",
+    "fabricated_citations": [],
+    "runtime": 15.123812198638916
+  },
+  {
+    "id": "eval_conflict_04",
+    "query": "What year was the Treaty of Versailles signed?",
+    "answer": "Based on the provided evidence, the Treaty of Versailles was signed in 1919. This conclusion is supported by two resolved clusters:\n\n1. The first cluster, 'history_contr_06a', is an encyclopedia source that explicitly states the Treaty of Versailles was signed in 1919, formally ending World War I.\n2. The second cluster, 'history_10', is a real-world source that also mentions the Treaty of Versailles was signed in 1919, officially ending World War I.\n\nThere are no conflicts in the evidence regarding the signing year of the Treaty of Versailles. Therefore, the final answer is:\n\nThe Treaty of Versailles was signed in 1919.",
+    "ground_truth": "1919",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_06a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_06a",
+      "history_10"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, specifically 'history_contr_06a' and 'history_10', which both state the Treaty of Versailles was signed in 1919.",
+    "fabricated_citations": [],
+    "runtime": 19.869368076324463
+  },
+  {
+    "id": "eval_conflict_05",
+    "query": "When was COVID-19 first identified?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nCOVID-19 was first identified in Wuhan, China in December 2019.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('health_contr_08a') is consistent and provides a clear resolution to the question.",
+    "ground_truth": "December 2019",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "health_contr_08a"
+    ],
+    "chosen_doc_ids": [
+      "health_contr_08a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, specifically Doc id=health_contr_08a and Doc id=health_01.",
+    "fabricated_citations": [],
+    "runtime": 14.392251253128052
+  },
+  {
+    "id": "eval_conflict_06",
+    "query": "When was the Human Genome Project completed?",
+    "answer": "Based on the provided evidence, the Human Genome Project was completed in 2003. This information is consistent across the available source, and there are no conflicts or uncertainties mentioned. Therefore, the final answer is:\n\nThe Human Genome Project was completed in 2003.",
+    "ground_truth": "2003",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_10a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_10a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on Doc id=science_contr_10a, which states the project was completed in 2003, but there is another document (Doc id=science_contr_10b) that states it was completed in 2001, contradicting the answer.",
+    "fabricated_citations": [],
+    "runtime": 13.103628158569336
+  },
+  {
+    "id": "eval_conflict_07",
+    "query": "When was the World Wide Web invented?",
+    "answer": "Based on the provided evidence, the World Wide Web was invented in 1989. This conclusion is supported by the most recently published source, which is an encyclopedia entry.",
+    "ground_truth": "1989",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_11a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_11a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, specifically Doc id=technology_contr_11a and Doc id=technology_04.",
+    "fabricated_citations": [],
+    "runtime": 12.200330018997192
+  },
+  {
+    "id": "eval_conflict_08",
+    "query": "What is the average life expectancy in Japan?",
+    "answer": "Based on the provided evidence, the average life expectancy in Japan is approximately 84.6 years. This information is from a reliable source, an encyclopedia, and is the most recently published source available. Therefore, I can confidently provide the final answer:\n\nThe average life expectancy in Japan is approximately 84.6 years.",
+    "ground_truth": "84.6 years",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "health_contr_13a"
+    ],
+    "chosen_doc_ids": [
+      "health_contr_13a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, as it claims to be from a reliable source and the most recently published source, which is not mentioned in the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 14.521863460540771
+  },
+  {
+    "id": "eval_conflict_09",
+    "query": "When was the first human heart transplant performed?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe first human heart transplant was performed by Christiaan Barnard in 1967.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('health_contr_15a') is clear and consistent.",
+    "ground_truth": "1967",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "health_contr_15a"
+    ],
+    "chosen_doc_ids": [
+      "health_contr_15a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, as both retrieved documents ('health_contr_15a') consistently state that the first human heart transplant was performed by Christiaan Barnard in 1967.",
+    "fabricated_citations": [],
+    "runtime": 10.963054895401001
+  },
+  {
+    "id": "eval_conflict_10",
+    "query": "When was the first SMS text message sent?",
+    "answer": "Based on the provided evidence, there is a conflict between the two sources regarding the date of the first SMS text message. \n\nOne source, a blog post from 'technology_contr_17b', states that the first SMS text message was sent in 1993. \n\nAnother source, an encyclopedia from 'technology_contr_17a', states that the first SMS text message was sent in 1992.\n\nSince the two sources have conflicting information, and there is no clear resolution or further evidence to resolve the conflict, the answer remains uncertain.\n\nTherefore, the final answer is: The date of the first SMS text message is uncertain, with conflicting evidence suggesting either 1992 or 1993.",
+    "ground_truth": "1992",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_17a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_17b",
+      "technology_contr_17a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically the mention of a blog post and an encyclopedia, which are not provided.",
+    "fabricated_citations": [],
+    "runtime": 11.551211595535278
+  },
+  {
+    "id": "eval_conflict_11",
+    "query": "Whose X-ray crystallography work was used to determine the structure of DNA?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nRosalind Franklin and Maurice Wilkins' X-ray crystallography work was used to determine the structure of DNA, as part of the research conducted by Watson and Crick in 1953.\n\nThere are no conflicts in the provided evidence, and the answer is based on the resolved cluster.",
+    "ground_truth": "Rosalind Franklin",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_19a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_19a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, as Doc id=science_contr_19b states that Watson and Crick did not use any crystallography data.",
+    "fabricated_citations": [],
+    "runtime": 12.155584335327148
+  },
+  {
+    "id": "eval_conflict_12",
+    "query": "How long is the Great Wall of China?",
+    "answer": "Based on the provided evidence, the length of the Great Wall of China is approximately 21,196 kilometers. This information comes from a reliable source, an encyclopedia, and is the most recently published source available.\n\nHowever, there is a conflict with another source, a travel blog, which reports the length of the Great Wall of China as approximately 13,171 miles. \n\nSince we have a resolved cluster for kilometers, we will rely on that information. However, we cannot fully resolve the conflict due to the difference in units (kilometers vs miles). To provide a more accurate answer, we would need to convert the miles to kilometers or find a source that reports the length in both units. \n\nFor now, we can provide the length in kilometers as the most reliable information available, but acknowledge the uncertainty due to the conflicting miles measurement. \n\nFinal answer: The Great Wall of China is approximately 21,196 kilometers long.",
+    "ground_truth": "21,196 kilometres",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "geography_contr_20a",
+      "geography_contr_20b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, specifically Doc id=geography_contr_20a and Doc id=geography_07, which both report the length of the Great Wall of China as approximately 21,196 kilometers.",
+    "fabricated_citations": [],
+    "runtime": 10.608431100845337
+  },
+  {
+    "id": "eval_conflict_13",
+    "query": "Who funded Columbus's 1492 voyage to the Americas?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nChristopher Columbus's 1492 voyage to the Americas was funded by Queen Isabella of Castile and King Ferdinand of Aragon.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the encyclopedia (history_contr_21a) is clear and consistent.",
+    "ground_truth": "Spanish crown",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_21a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_21a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically Doc id=history_contr_21a states Columbus sailed under the patronage of Queen Isabella and King Ferdinand, but does not explicitly state they funded the voyage.",
+    "fabricated_citations": [],
+    "runtime": 12.870575189590454
+  },
+  {
+    "id": "eval_conflict_14",
+    "query": "Who invented the first computer mouse?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe first computer mouse was invented by Douglas Engelbart in 1964 at the Stanford Research Institute.\n\nHowever, there is a conflict in the evidence regarding the role of Bill English. While one source ('technology_contr_22b') states that Bill English designed and built the physical device based on a rough concept sketch by Douglas Engelbart, another source ('technology_contr_22a') does not mention Bill English's involvement in the invention. Therefore, the exact role of Bill English in the invention of the first computer mouse remains uncertain.\n\nThe final answer is based on the resolved cluster for the institution where the first computer mouse was invented, which is the most reliable source available.",
+    "ground_truth": "Douglas Engelbart",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_22a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_22b",
+      "technology_contr_22a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically Doc id=technology_contr_22a and Doc id=technology_01.",
+    "fabricated_citations": [],
+    "runtime": 13.387808084487915
+  },
+  {
+    "id": "eval_conflict_15",
+    "query": "Was Jenner's 1796 smallpox vaccine an original invention or based on earlier techniques?",
+    "answer": "Based on the provided evidence, there is a conflict between the two resolved clusters. \n\nThe first cluster ('health_contr_23a') suggests that Jenner's 1796 smallpox vaccine was an original invention, citing that he demonstrated immunity to smallpox by inoculating a young boy with material from a cowpox lesion.\n\nThe second cluster ('health_contr_23b') suggests that Jenner's 1796 smallpox vaccine was not an original invention, stating that Turkish and Chinese practitioners had used variolation for centuries before him.\n\nHowever, the second cluster does not provide information on whether Jenner's specific method of using cowpox material to demonstrate immunity to smallpox was original or not. It only mentions that variolation was used before him.\n\nTherefore, while there is a conflict between the two clusters, it is not possible to resolve it with the given evidence. The uncertainty remains: Jenner's 1796 smallpox vaccine may have been based on earlier techniques, but the extent to which it was original or not is unclear.",
+    "ground_truth": "cowpox",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "health_contr_23a"
+    ],
+    "chosen_doc_ids": [
+      "health_contr_23a",
+      "health_contr_23b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "Self-consistency override (model said grounded, but its own reasoning contradicted that): The answer relies on outside knowledge not present in the documents, specifically the distinction between variolation and Jenner's specific method.",
+    "fabricated_citations": [],
+    "runtime": 15.108327865600586
+  },
+  {
+    "id": "eval_conflict_16",
+    "query": "How large is the Sahara Desert and how many countries does it span?",
+    "answer": "Based on the provided evidence, the Sahara Desert spans approximately 9.2 million square kilometers across eleven North African countries. \n\nHowever, there is a conflict in the size measurement between square kilometers and square miles. The evidence from the travel guide ('geography_contr_24b') provides a size of approximately 3.6 million square miles, which is equivalent to about 9.3 million square kilometers. This conflicts with the size provided in the encyclopedia ('geography_contr_24a').\n\nSince the conflict remains unresolved, we cannot provide a definitive answer to the size in square miles. The size in square kilometers is consistent across the two reliable sources, but the discrepancy in measurement units remains unclear.",
+    "ground_truth": "9.2 million square kilometres",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "geography_contr_24a"
+    ],
+    "chosen_doc_ids": [
+      "geography_contr_24a",
+      "geography_contr_24b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically Doc id=geography_contr_24a and Doc id=geography_10, which provide consistent information about the Sahara Desert's size in square kilometers.",
+    "fabricated_citations": [],
+    "runtime": 15.038150310516357
+  },
+  {
+    "id": "eval_conflict_17",
+    "query": "Was the French Revolution a popular uprising or a bourgeois political movement?",
+    "answer": "Based on the provided evidence, there is a conflict between the two resolved clusters. \n\nThe first cluster suggests that the French Revolution was a popular uprising driven by widespread famine and resentment of aristocratic privilege among the common people (history_contr_25a). \n\nThe second cluster suggests that the French Revolution was a bourgeois political movement led by the educated middle class seeking constitutional reform (history_contr_25b).\n\nGiven the conflicting views, it is uncertain which description accurately represents the French Revolution. While history_contr_25a emphasizes the role of the common people, history_contr_25b highlights the involvement of the educated middle class. \n\nTherefore, the final answer is: The nature of the French Revolution remains uncertain due to conflicting evidence.",
+    "ground_truth": "popular uprising",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_25a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_25a",
+      "history_contr_25b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "Self-consistency override (model said grounded, but its own reasoning contradicted that): The answer accurately reflects the conflicting views presented in the retrieved documents without introducing outside knowledge.",
+    "fabricated_citations": [],
+    "runtime": 17.252001523971558
+  },
+  {
+    "id": "eval_conflict_18",
+    "query": "Who originally developed the PageRank algorithm used by Google?",
+    "answer": "Based on the provided evidence, there is a conflict in the origin of the PageRank algorithm. The evidence suggests that Robin Li developed a similar concept to PageRank in 1996 and patented it, while Larry Page and Sergey Brin are credited with founding Google in 1998.\n\nHowever, the evidence also implies that the core PageRank algorithm was developed independently by Robin Li, which contradicts the common understanding that PageRank was developed by Larry Page and Sergey Brin.\n\nGiven the available evidence, I must conclude that the origin of the PageRank algorithm is uncertain. While Larry Page and Sergey Brin are credited with founding Google, the evidence suggests that Robin Li may have developed a similar concept to PageRank independently. Therefore, I cannot definitively state who originally developed the PageRank algorithm used by Google.",
+    "ground_truth": "PageRank was developed by Page and Brin",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_26a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_26b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "Self-consistency override (model said grounded, but its own reasoning contradicted that): The answer relies on outside knowledge not present in the documents, as it mentions \"common understanding\" and \"the origin of the PageRank algorithm used by Google\", which are not supported by the provided documents.",
+    "fabricated_citations": [],
+    "runtime": 15.834070682525635
+  },
+  {
+    "id": "eval_conflict_19",
+    "query": "What does the brain primarily use its energy for?",
+    "answer": "Based on the provided evidence, the brain primarily uses its energy for maintaining ion gradients across neuronal membranes. This is supported by the most recently published source, 'health_contr_27a', which states that the human brain uses about 20% of the body's total energy, primarily for this purpose.\n\nThere is no conflicting evidence mentioned in the provided information, so this answer is based on the resolved cluster of evidence.",
+    "ground_truth": "maintaining ion gradients",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "health_contr_27a"
+    ],
+    "chosen_doc_ids": [
+      "health_contr_27a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, as 'health_contr_27a' does not mention being the most recently published source, and 'health_contr_27b' provides conflicting information that the majority of energy is consumed by synaptic transmission and neurotransmitter recycling.",
+    "fabricated_citations": [],
+    "runtime": 12.195688962936401
+  },
+  {
+    "id": "eval_conflict_20",
+    "query": "What biological material did Miescher use to first isolate DNA?",
+    "answer": "Based on the provided evidence, there are two conflicting sources regarding the biological material used by Miescher to first isolate DNA. \n\nOne source, from the science_history_blog, states that Miescher isolated DNA from salmon sperm cells (Doc id=science_contr_28b). \n\nThe other source, from the encyclopedia, states that Miescher isolated DNA from white blood cells in pus-soaked bandages obtained from a nearby surgical clinic (Doc id=science_contr_28a).\n\nSince both sources are from different publications and there is no clear resolution to the conflict, the answer remains uncertain. \n\nTherefore, the final answer is: The biological material used by Miescher to first isolate DNA is either salmon sperm cells or white blood cells in pus-soaked bandages, and the conflict remains unresolved.",
+    "ground_truth": "white blood cells",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_28a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_28b",
+      "science_contr_28a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "Self-consistency override (model said grounded, but its own reasoning contradicted that): The answer relies on outside knowledge not present in the retrieved documents, specifically the sources \"science_history_blog\" and \"encyclopedia\", which are not included in the provided documents.",
+    "fabricated_citations": [],
+    "runtime": 14.84610915184021
+  },
+  {
+    "id": "eval_conflict_21",
+    "query": "How long is the Great Barrier Reef?",
+    "answer": "Based on the provided evidence, the length of the Great Barrier Reef is 2,300 kilometres. This information is from a reliable source, an encyclopedia, and is the most recently published source available in the given cluster. Therefore, the final answer is:\n\nThe Great Barrier Reef is approximately 2,300 kilometres long.",
+    "ground_truth": "2,300 kilometres",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "geography_contr_29a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on Doc id=geography_contr_29a and Doc id=geography_contr_29b, which provide conflicting information, but also on Doc id=geography_10, which only mentions the length of the Great Barrier Reef as 2,300 kilometers without providing any additional context or evidence to support this specific value over the other.",
+    "fabricated_citations": [],
+    "runtime": 17.552791595458984
+  },
+  {
+    "id": "eval_conflict_22",
+    "query": "Who led the forces that defeated Napoleon at Waterloo?",
+    "answer": "Based on the provided evidence, the leaders of the forces that defeated Napoleon at Waterloo were the Duke of Wellington and Prussian Field Marshal Blucher. This conclusion is supported by multiple resolved clusters, all of which point to the same information.\n\nThe evidence from 'history_contr_30a' consistently states that Napoleon Bonaparte was decisively defeated at Waterloo in 1815 by a coalition led by the Duke of Wellington and Prussian Field Marshal Blucher.\n\nThere are no conflicts or uncertainties in the evidence regarding the leadership of the forces that defeated Napoleon at Waterloo. Therefore, the final answer is:\n\nThe Duke of Wellington and Prussian Field Marshal Blucher led the forces that defeated Napoleon at Waterloo.",
+    "ground_truth": "Wellington and Blucher",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_30a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_30a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically 'history_contr_30a' and 'history_04', which consistently state that Napoleon Bonaparte was defeated at Waterloo by a coalition led by the Duke of Wellington and Prussian Field Marshal Blucher.",
+    "fabricated_citations": [],
+    "runtime": 19.912559747695923
+  },
+  {
+    "id": "eval_conflict_23",
+    "query": "Who created Facebook and was it a solo or collaborative effort?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nMark Zuckerberg created Facebook, and it was a solo effort. The evidence from 'technology_contr_31a' clearly states that Facebook was launched by Mark Zuckerberg in February 2004 from his Harvard dormitory room.\n\nThere is no conflicting evidence in the provided clusters regarding the creation of Facebook. However, it's essential to note that the question also asks if the effort was solo or collaborative. The provided evidence does not mention any collaborators in the creation of Facebook, suggesting that it was a solo effort.",
+    "ground_truth": "Mark Zuckerberg",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_31a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_31a",
+      "technology_contr_26b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer incorrectly states that the evidence suggests a solo effort, when in fact, 'technology_contr_31b' explicitly mentions that Facebook was co-created by multiple individuals.",
+    "fabricated_citations": [],
+    "runtime": 16.93876814842224
+  },
+  {
+    "id": "eval_conflict_24",
+    "query": "How does aerobic exercise reduce cardiovascular disease risk?",
+    "answer": "Based on the provided context, aerobic exercise reduces cardiovascular disease risk primarily by lowering chronic inflammation markers and improving lipid profiles. Direct cardiac strengthening is a secondary effect.",
+    "ground_truth": "strengthening the heart muscle",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "correct_doc_ids": [
+      "health_contr_32a"
+    ],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically the mention of \"lowering chronic inflammation markers\" and \"improving lipid profiles\" which is only mentioned in Doc id=health_contr_32b but not as the primary effect.",
+    "fabricated_citations": [],
+    "runtime": 7.858102321624756
+  },
+  {
+    "id": "eval_conflict_25",
+    "query": "Who was the principal author of the Declaration of Independence?",
+    "answer": "Based on the provided evidence, the principal author of the Declaration of Independence is Thomas Jefferson. This conclusion is supported by the text from 'history_contr_33a', which states that Jefferson was the principal author with minor edits from Benjamin Franklin and John Adams.\n\nThere are no conflicts or uncertainties in this evidence, so the answer is definitive.",
+    "ground_truth": "Thomas Jefferson",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "history_contr_33a"
+    ],
+    "chosen_doc_ids": [
+      "history_contr_33a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer relies solely on the provided documents, specifically 'history_contr_33a', which directly states that Thomas Jefferson was the principal author.",
+    "fabricated_citations": [],
+    "runtime": 14.825465679168701
+  },
+  {
+    "id": "eval_nonconflict_11",
+    "query": "In what year was the Declaration of Independence signed?",
+    "answer": "The Declaration of Independence was signed in 1776 on July 4th in Philadelphia.",
+    "ground_truth": "1776",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically Doc id=history_contr_33a and Doc id=history_04.",
+    "fabricated_citations": [],
+    "runtime": 10.233844995498657
+  },
+  {
+    "id": "eval_nonconflict_12",
+    "query": "When did World War I begin?",
+    "answer": "Based on the provided evidence, the final answer is that World War I began in 1914. \n\nThis conclusion is drawn from the resolved cluster 'history_01', which is a real-world document that directly states World War I started in 1914 after the assassination of Archduke Franz Ferdinand in Sarajevo. This information is consistent with the other resolved cluster 'history_contr_06a', which also mentions the Treaty of Versailles being signed in 1919, formally ending World War I.\n\nHowever, there is a conflict between the resolved cluster 'history_contr_06b' and 'history_contr_06a' regarding the date of the Treaty of Versailles. While 'history_contr_06a' states it was signed in 1919, 'history_contr_06b' states it was signed in 1920. This conflict remains unresolved.\n\nTherefore, while the start date of World War I is confirmed as 1914, the exact date of the Treaty of Versailles remains uncertain due to conflicting evidence.",
+    "ground_truth": "1914",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "history_contr_06b",
+      "history_contr_06a",
+      "history_01"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim that World War I began in 1914 is genuinely supported by the document 'history_01'.",
+    "fabricated_citations": [],
+    "runtime": 19.72024440765381
+  },
+  {
+    "id": "eval_nonconflict_13",
+    "query": "What year was Google founded?",
+    "answer": "Based on the provided evidence, there is a conflict between the two resolved clusters. \n\nThe first cluster, which is the most recently published source, states that Google was founded in 1996. \n\nThe second cluster, which is from an encyclopedia, states that Google was founded in 1998.\n\nSince the two sources have conflicting information, and there is no clear resolution to this conflict, I must state that the answer is uncertain. \n\nTherefore, the final answer is: Google was founded in either 1996 or 1998, and the conflict remains unresolved.",
+    "ground_truth": "1998",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "technology_contr_07a"
+    ],
+    "chosen_doc_ids": [
+      "technology_contr_07b",
+      "technology_contr_07a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer correctly identifies conflicting information in the provided documents and acknowledges the uncertainty.",
+    "fabricated_citations": [],
+    "runtime": 11.391855716705322
+  },
+  {
+    "id": "eval_nonconflict_14",
+    "query": "When was Facebook launched?",
+    "answer": "Facebook was launched by Mark Zuckerberg in 2004, initially restricted to Harvard students only.",
+    "ground_truth": "2004",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically Doc id=technology_contr_31a and Doc id=technology_01.",
+    "fabricated_citations": [],
+    "runtime": 8.375551700592041
+  },
+  {
+    "id": "eval_nonconflict_15",
+    "query": "What year did Edward Jenner develop the first vaccine?",
+    "answer": "Based on the provided evidence, there are two resolved clusters regarding Edward Jenner's development of the first vaccine. \n\nCluster 1: Edward Jenner developed the first vaccine in 1796.\nCluster 2: The first vaccine was not truly Edward Jenner's own invention.\n\nHowever, these two clusters are in conflict with each other. While both agree on the year 1796, the second cluster introduces uncertainty by stating that the technique was not truly Jenner's own invention, implying that there were earlier forms of vaccination.\n\nGiven the conflicting information, we cannot definitively resolve the question of who developed the first vaccine. However, we can confirm that Edward Jenner developed a vaccine in 1796, but the extent of his originality is uncertain.\n\nTherefore, the final answer is:\n\nEdward Jenner developed a vaccine in 1796, but the extent of his originality is uncertain due to conflicting evidence.",
+    "ground_truth": "1796",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "health_contr_23a",
+      "health_contr_23b",
+      "technology_contr_22b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, specifically Doc id=health_contr_23a and Doc id=health_contr_23b, which provide conflicting information about Edward Jenner's originality but confirm the year 1796.",
+    "fabricated_citations": [],
+    "runtime": 15.12627363204956
+  },
+  {
+    "id": "eval_nonconflict_16",
+    "query": "Who sent the first email and when?",
+    "answer": "Based on the provided evidence, the answer to the question \"Who sent the first email and when?\" is:\n\nThe first email was sent by Ray Tomlinson in 1971 to himself as a test message.\n\nThere are no conflicts or uncertainties in this evidence, as it is consistently reported across multiple sources.",
+    "ground_truth": "1971",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "technology_contr_17a",
+      "technology_01"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the provided document (Doc id=technology_01).",
+    "fabricated_citations": [],
+    "runtime": 11.145947694778442
+  },
+  {
+    "id": "eval_nonconflict_17",
+    "query": "How large is the Sahara Desert in square kilometers?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe Sahara Desert spans approximately 9.2 million square kilometers across eleven North African countries.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('geography_contr_24a') provides a clear and consistent value for the Sahara Desert's size.",
+    "ground_truth": "9.2 million square kilometers",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "geography_contr_24a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents, specifically Doc id=geography_contr_24a and Doc id=geography_02.",
+    "fabricated_citations": [],
+    "runtime": 13.126648426055908
+  },
+  {
+    "id": "eval_nonconflict_18",
+    "query": "How many cells does the human body contain?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe human body contains approximately 37.2 trillion cells.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('science_contr_03a') provides a clear and resolved estimate of the number of cells in the human body.",
+    "ground_truth": "37.2 trillion",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_03a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_03a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is directly supported by the retrieved documents, which consistently state that the human body contains approximately 37.2 trillion cells.",
+    "fabricated_citations": [],
+    "runtime": 13.541507482528687
+  },
+  {
+    "id": "eval_ookb_01",
+    "query": "What is the radius of the Earth?",
+    "answer": "Unfortunately, the provided context does not contain information about the radius of the Earth.",
+    "ground_truth": "6,371 kilometres",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, as they explicitly state that the provided context does not contain information about the radius of the Earth.",
+    "fabricated_citations": [],
+    "runtime": 9.311836242675781
+  },
+  {
+    "id": "eval_ookb_02",
+    "query": "What is the most abundant gas in Earth's atmosphere?",
+    "answer": "Unfortunately, the provided context does not mention the most abundant gas in Earth's atmosphere.",
+    "ground_truth": "Nitrogen",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claim is genuinely supported by the documents, as they do not mention the most abundant gas in Earth's atmosphere.",
+    "fabricated_citations": [],
+    "runtime": 12.35849380493164
+  },
+  {
+    "id": "eval_ookb_03",
+    "query": "What year did humans first land on the Moon?",
+    "answer": "Based on the provided evidence, the year humans first landed on the Moon is not directly mentioned. However, the evidence does provide information about Voyager 1, a human-made object that left the solar system in 2012.\n\nSince there is no direct evidence about the year humans first landed on the Moon, I must conclude that the question cannot be answered based on the provided information. The evidence does not contain any relevant data about the Moon landing.",
+    "ground_truth": "1969",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "science_contr_34a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "Self-consistency override (model said grounded, but its own reasoning contradicted that): The answer relies on outside knowledge not present in the documents, as it does not mention the Moon landing at all.",
+    "fabricated_citations": [],
+    "runtime": 18.443039417266846
+  },
+  {
+    "id": "eval_ookb_04",
+    "query": "What is the most spoken language in the world by native speakers?",
+    "answer": "Unfortunately, the provided context does not contain information about the most spoken language in the world by native speakers. The documents cover various geographical aspects, but language information is not mentioned. Therefore, I am uncertain about the answer to your question.",
+    "ground_truth": "Mandarin Chinese",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer's factual claims are genuinely supported by the documents, as they explicitly state that language information is not mentioned.",
+    "fabricated_citations": [],
+    "runtime": 11.16527533531189
+  },
+  {
+    "id": "eval_ookb_05",
+    "query": "In which ocean is the Bermuda Triangle located?",
+    "answer": "Based on the provided evidence, there is a conflict between the two sources regarding the size of the Pacific Ocean. \n\nThe first source (geography_contr_09a) states that the Pacific Ocean covers approximately 165.25 million square kilometers, while the second source (geography_contr_09b) states that it covers approximately 155 million square kilometers.\n\nSince the conflict remains unresolved, I cannot provide a definitive answer on the size of the Pacific Ocean. However, I can say that the Bermuda Triangle is not located in the Pacific Ocean, as it is commonly known to be situated in the Atlantic Ocean.\n\nTherefore, the final answer is: The Bermuda Triangle is located in the Atlantic Ocean.",
+    "ground_truth": "Pacific Ocean",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "geography_contr_09a",
+      "geography_contr_09b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically the location of the Bermuda Triangle in the Atlantic Ocean.",
+    "fabricated_citations": [],
+    "runtime": 13.121402978897095
+  },
+  {
+    "id": "eval_conflict_26",
+    "query": "What was the first human-made object to leave the solar system?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe first human-made object to leave the solar system was Voyager 1, which crossed the heliopause in August 2012 after traveling for 35 years.\n\nThere are no conflicts or uncertainties in this answer, as the evidence from the selected source ('science_contr_34a') is clear and consistent.",
+    "ground_truth": "Voyager 1",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "science_contr_34a"
+    ],
+    "chosen_doc_ids": [
+      "science_contr_34a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, as the documents also mention Pioneer 10 as the first human-made object to leave the solar system.",
+    "fabricated_citations": [],
+    "runtime": 12.336688995361328
+  },
+  {
+    "id": "eval_conflict_27",
+    "query": "How many countries does the Sahara Desert span?",
+    "answer": "Based on the provided evidence, the Sahara Desert spans approximately 9.2 million square kilometers across North Africa. \n\nThere are two sources that confirm the area of the Sahara Desert as 9.2 million square kilometers. However, the question also asks for the number of countries the Sahara Desert spans.\n\nSource 'geography_contr_24a' from the encyclopedia states that the Sahara Desert spans across eleven North African countries. \n\nSource 'geography_10' from real-world data also states that the Sahara Desert covers about 9.2 million square kilometers across North Africa, but it does not provide information on the number of countries.\n\nSince both sources confirm the area of the Sahara Desert but only one source ('geography_contr_24a') provides information on the number of countries, we can conclude that the Sahara Desert spans approximately 9.2 million square kilometers across eleven North African countries.\n\nHowever, it is worth noting that there is no direct conflict between the two sources regarding the area of the Sahara Desert, but the number of countries remains uncertain based on the provided evidence.",
+    "ground_truth": "eleven countries",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "geography_contr_24a"
+    ],
+    "chosen_doc_ids": [
+      "geography_contr_24a",
+      "geography_10"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is supported by two sources that confirm the area and one source that confirms the number of countries the Sahara Desert spans.",
+    "fabricated_citations": [],
+    "runtime": 10.475127696990967
+  },
+  {
+    "id": "eval_conflict_28",
+    "query": "Is the Great Barrier Reef visible from space?",
+    "answer": "Based on the provided evidence, there is a conflict between the two clusters. \n\nThe first cluster, which is the most recently published source from an encyclopedia, states that the Great Barrier Reef is \"clearly visible from space.\" \n\nThe second cluster, which is also the most recently published source from a marine biology journal, claims that the Great Barrier Reef is \"not visible to the naked eye from orbit\" despite popular claims.\n\nGiven the conflicting information, I must state that the answer is uncertain. While the Great Barrier Reef is a large and prominent feature, its visibility from space is disputed.",
+    "ground_truth": "visible from space",
+    "has_conflict_gold": true,
+    "has_conflict_system": true,
+    "correct_doc_ids": [
+      "geography_contr_29a"
+    ],
+    "chosen_doc_ids": [
+      "geography_contr_29a",
+      "geography_contr_29b"
+    ],
+    "flagged_uncertain": false,
+    "faithful": false,
+    "faithfulness_notes": "The answer relies on outside knowledge not present in the documents, specifically the concept of \"naked eye from orbit\" and the idea of \"popular claims,\" which are not mentioned in the retrieved documents.",
+    "fabricated_citations": [],
+    "runtime": 10.480066061019897
+  },
+  {
+    "id": "eval_nonconflict_19",
+    "query": "Is the Great Wall of China visible from space?",
+    "answer": "Based on the provided evidence, the final answer is:\n\nThe Great Wall of China is visible from space, specifically from low Earth orbit.\n\nThis conclusion is supported by the resolved cluster 'geography_contr_20a', which states that the Great Wall of China is visible from low Earth orbit. There is no conflicting evidence in the provided cluster, and the statement is consistent with the description of the Great Wall's visibility from space.\n\nHowever, it's worth noting that the question does not provide any information about the visibility of the Great Wall of China from higher orbits, such as geosynchronous orbit or from the Moon. If additional evidence were available, it may be possible to provide a more comprehensive answer.\n\nAdditionally, it's worth mentioning that the provided evidence does not address the visibility of the Great Wall of China from the Moon or from the surface of the Earth.",
+    "ground_truth": "visible from space",
+    "has_conflict_gold": false,
+    "has_conflict_system": true,
+    "correct_doc_ids": [],
+    "chosen_doc_ids": [
+      "geography_contr_20a",
+      "geography_contr_29a"
+    ],
+    "flagged_uncertain": false,
+    "faithful": true,
+    "faithfulness_notes": "The answer is supported by the documents, specifically Doc id=geography_contr_20a, which states that the Great Wall of China is visible from low Earth orbit.",
+    "fabricated_citations": [],
+    "runtime": 7.310805559158325
+  }
+]

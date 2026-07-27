@@ -1,0 +1,2 @@
+{"id": "science_contr_10a", "text": "The Human Genome Project was completed in 2003 after 13 years of work.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:science_contr_10b"}
+{"id": "science_contr_10b", "text": "The Human Genome Project was completed in 2001 after 13 years of work.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:science_contr_10a"}

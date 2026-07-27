@@ -24,24 +24,31 @@ def _format_docs_for_llm(doc_ids: List[str], docs: List[RetrievedDoc]) -> str:
 def _parse_date(value):
     """
     Parse a date-like string for most_recent sorting.
-    If parsing fails, return an empty string so it sorts last.
+    Returns a ``datetime``; missing or unparsable values yield ``datetime.min``
+    so they sort *last* (oldest) when ``reverse=True``.
     """
-    from datetime import datetime
+    from datetime import datetime, MINYEAR
 
+    # If there is no value at all, treat as the earliest possible date
     if not value:
-        return ""
+        return datetime(MINYEAR, 1, 1)
     for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y-%m-%d %H:%M:%S"):
         try:
             return datetime.strptime(str(value), fmt)
         except ValueError:
             continue
-    return ""
+    # Unparsable string – treat as earliest date as well
+    return datetime(MINYEAR, 1, 1)
 
 
 def _choose_most_recent(doc_ids: List[str], docs: List[RetrievedDoc]) -> List[str]:
+    # Build a map of available documents
     id_to_doc = {d.id: d for d in docs}
+    # Filter out any doc_id that is not present in the retrieved docs (defensive safety)
+    existing_ids = [doc_id for doc_id in doc_ids if doc_id in id_to_doc]
+    # Sort by publication_date (most recent first). Missing dates default to empty string → sorted last.
     ranked = sorted(
-        doc_ids,
+        existing_ids,
         key=lambda doc_id: _parse_date(id_to_doc[doc_id].metadata.get("publication_date")),
         reverse=True,
     )

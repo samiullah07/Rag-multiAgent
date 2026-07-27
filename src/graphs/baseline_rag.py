@@ -6,13 +6,7 @@ from src.agents.retriever import retriever_agent
 from src.agents.answer_generator import answer_generation_agent
 
 
-class BaselineState(Dict[str, Any]):
-    """
-    Keys:
-      - query: str
-      - retrieved_docs: List[RetrievedDoc]
-      - answer: str
-    """
+BaselineState = Dict[str, Any]
 
 
 def retriever_node(state: BaselineState) -> BaselineState:

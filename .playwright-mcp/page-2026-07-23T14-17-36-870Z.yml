@@ -1,0 +1,82 @@
+- generic:
+  - generic:
+    - generic [ref=f1e2]:
+      - list [ref=f1e10]:
+        - listitem [ref=f1e11]:
+          - link [ref=f1e13] [cursor=pointer]:
+            - /url: http://localhost:8501/
+            - paragraph [ref=f1e16]: app
+        - listitem [ref=f1e17]:
+          - link [ref=f1e19] [cursor=pointer]:
+            - /url: http://localhost:8501/Knowledge_Base
+            - generic [ref=f1e20]: 📚
+            - paragraph [ref=f1e25]: Knowledge Base
+        - listitem [ref=f1e26]:
+          - link [ref=f1e28] [cursor=pointer]:
+            - /url: http://localhost:8501/Belief_Timeline
+            - generic [ref=f1e29]: ⏳
+            - paragraph [ref=f1e34]: Belief Timeline
+      - generic [ref=f1e3]:
+        - banner [ref=f1e38]:
+          - generic [ref=f1e41]:
+            - button "Deploy" [ref=f1e52] [cursor=pointer]
+            - button "Main menu" [ref=f1e56] [cursor=pointer]
+        - generic [ref=f1e60]:
+          - heading "⏳ Temporal Belief-Revision Timeline" [level=2] [ref=f1e66]:
+            - text: ⏳ Temporal Belief-Revision Timeline
+            - generic [ref=f1e67]:
+              - link "Link to heading":
+                - /url: "#temporal-belief-revision-timeline"
+          - paragraph [ref=f1e72]:
+            - text: Shows how the system's answer to a query
+            - strong [ref=f1e73]: would have changed
+            - text: as documents with later publication dates were progressively added to the knowledge base — visualising belief revision in the spirit of AGM theory (Alchourrón, Gärdenfors & Makinson, 1985).
+          - generic [ref=f1e75]:
+            - generic [ref=f1e77]:
+              - heading "⚙️ Configuration" [level=3] [ref=f1e83]:
+                - text: ⚙️ Configuration
+                - generic [ref=f1e84]:
+                  - link "Link to heading":
+                    - /url: "#configuration"
+              - generic [ref=f1e86]:
+                - paragraph [ref=f1e90]: Choose a contradiction scenario
+                - generic [ref=f1e92]:
+                  - generic [ref=f1e93]:
+                    - generic [ref=f1e94]: Science — June 2015 vs January 2024
+                    - combobox "Selected Science — June 2015 vs January 2024. Choose a contradiction scenario" [expanded] [active] [ref=f1e96]
+                  - img "open" [ref=f1e98]
+              - generic [ref=f1e103]:
+                - generic [ref=f1e104]:
+                  - paragraph [ref=f1e107]: Query to trace
+                  - button "Help for Query to trace" [ref=f1e111] [cursor=pointer]
+                - textbox "Query to trace" [ref=f1e117]:
+                  - /placeholder: ""
+                  - text: What is the speed of light in meters per second?
+              - button [ref=f1e120] [cursor=pointer]:
+                - paragraph [ref=f1e124]: ▶ Generate Timeline
+            - generic [ref=f1e101]:
+              - heading "📋 Scenario Documents" [level=3] [ref=f1e130]:
+                - text: 📋 Scenario Documents
+                - generic [ref=f1e131]:
+                  - link "Link to heading":
+                    - /url: "#scenario-documents"
+              - generic [ref=f1e136]:
+                - generic [ref=f1e137]: Older source
+                - generic [ref=f1e138]: "ID: science_contr_01b · June 2015 · blog_post"
+                - generic [ref=f1e139]: The speed of light in a vacuum is approximately 300,000,000 meters per second.
+              - generic [ref=f1e144]:
+                - generic [ref=f1e145]: Newer source
+                - generic [ref=f1e146]: "ID: science_contr_01a · January 2024 · encyclopedia"
+                - generic [ref=f1e147]: The speed of light in a vacuum is exactly 299,792,458 meters per second.
+    - list [ref=f1e151]:
+      - generic [ref=f1e153]:
+        - option "Science — June 2015 vs January 2024" [selected] [ref=f1e154] [cursor=pointer]
+        - option "History — June 2015 vs January 2024" [ref=f1e159] [cursor=pointer]
+        - option "Science — June 2015 vs January 2024" [ref=f1e164] [cursor=pointer]
+        - option "Geography — June 2015 vs January 2024" [ref=f1e169] [cursor=pointer]
+        - option "Geography — June 2015 vs January 2024" [ref=f1e174] [cursor=pointer]
+        - option "History — June 2015 vs January 2024" [ref=f1e179] [cursor=pointer]
+        - option "Technology — June 2015 vs January 2024" [ref=f1e184] [cursor=pointer]
+        - option "Health — June 2015 vs January 2024" [ref=f1e189] [cursor=pointer]
+        - option "Geography — June 2015 vs January 2024" [ref=f1e194] [cursor=pointer]
+        - option "Science — June 2015 vs January 2024" [ref=f1e199] [cursor=pointer]

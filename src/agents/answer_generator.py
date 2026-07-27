@@ -5,6 +5,17 @@ from src.agents.schemas import RetrievedDoc, ResolvedEvidence
 from src.models.llm import get_chat_llm
 
 
+# Safety cap on how much text from a single document goes into the LLM
+# prompt. Added after a real, reproducible groq.APIStatusError (413,
+# "Request too large") caused by the document-upload feature: a large
+# uploaded file can produce several ~1000-character chunks, which on top
+# of the existing top_k permanent-KB chunks pushed a single prompt over
+# the model's TPM limit. This caps each doc's contribution regardless of
+# source (upload or permanent KB), since any source could in principle be
+# large.
+MAX_CHARS_PER_DOC = 2000
+
+
 def _build_context_from_docs(docs: List[RetrievedDoc], doc_ids: Optional[List[str]] = None) -> str:
     if doc_ids is None:
         selected = docs
@@ -14,7 +25,10 @@ def _build_context_from_docs(docs: List[RetrievedDoc], doc_ids: Optional[List[st
 
     chunks = []
     for d in selected:
-        chunks.append(f"Doc id={d.id}\nSource={d.metadata.get('source', 'unknown')}\nText:\n{d.text}")
+        text = d.text
+        if len(text) > MAX_CHARS_PER_DOC:
+            text = text[:MAX_CHARS_PER_DOC] + "..."
+        chunks.append(f"Doc id={d.id}\nSource={d.metadata.get('source', 'unknown')}\nText:\n{text}")
     return "\n\n".join(chunks)
 
 

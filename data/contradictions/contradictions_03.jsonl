@@ -1,0 +1,2 @@
+{"id": "science_contr_03a", "text": "The human body contains approximately 37.2 trillion cells.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:science_contr_03b"}
+{"id": "science_contr_03b", "text": "The human body contains approximately 75 trillion cells.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:science_contr_03a"}

@@ -1,0 +1,2 @@
+{"id": "geography_contr_04a", "text": "Mount Everest stands at 8,848.86 meters above sea level.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:geography_contr_04b"}
+{"id": "geography_contr_04b", "text": "Mount Everest stands at 8,611 meters above sea level.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:geography_contr_04a"}

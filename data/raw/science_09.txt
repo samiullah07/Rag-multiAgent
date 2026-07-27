@@ -1,0 +1,27 @@
+﻿# science - Document 9
+
+This document covers various aspects of science.
+
+- The speed of light in vacuum is 299,792,458 meters per second. This is a fundamental physical constant.
+
+- The Earth orbits the Sun at an average distance of 149.6 million kilometers. This distance is defined as one astronomical unit.
+
+- Water boils at 100 degrees Celsius at sea level under standard atmospheric pressure.
+
+- The human body contains approximately 37.2 trillion cells, according to recent cellular biology estimates.
+
+- DNA was first discovered by Friedrich Miescher in 1869 while studying white blood cells.
+
+- The periodic table was created by Dmitri Mendeleev in 1869, organizing elements by atomic weight and properties.
+
+- Albert Einstein published the theory of relativity in 1905 in his annus mirabilis papers.
+
+- The first antibiotic penicillin was discovered by Alexander Fleming in 1928 at St. Mary's Hospital.
+
+- The structure of DNA was determined by Watson and Crick in 1953 using X-ray crystallography data.
+
+- The first human heart transplant was performed by Christiaan Barnard in 1967 in Cape Town, South Africa.
+
+## Summary
+This document provides key information about science suitable for educational and reference purposes.
+

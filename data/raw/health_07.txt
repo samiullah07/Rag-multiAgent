@@ -1,0 +1,27 @@
+﻿# health - Document 7
+
+This document covers various aspects of health.
+
+- The average human heart beats about 100,000 times per day throughout a lifetime.
+
+- A typical adult has a blood volume of approximately 5 liters circulating through the body.
+
+- The human brain uses about 20% of the body's total energy consumption at rest.
+
+- Vitamin C deficiency leads to scurvy, a disease that plagued sailors until the 18th century.
+
+- The first vaccine was developed by Edward Jenner for smallpox in 1796 using cowpox.
+
+- Antibiotics revolutionized medicine after the discovery of penicillin in 1928.
+
+- The Human Genome Project was completed in 2003 after 13 years and  billion investment.
+
+- COVID-19 was first identified in Wuhan, China in December 2019 as a novel coronavirus.
+
+- The average life expectancy in Japan is 84.6 years, among the highest globally.
+
+- Regular exercise can reduce the risk of heart disease by up to 35% according to studies.
+
+## Summary
+This document provides key information about health suitable for educational and reference purposes.
+

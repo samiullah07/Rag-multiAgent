@@ -2,18 +2,19 @@
 /* Basic layout and bubble styles; extend as you like */
 
 body {
-  margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #020617;
+  background: radial-gradient(circle at top, #020617 0%, #020617 40%, #020617 100%);
   color: #e5e7eb;
 }
 
 #chat {
-  max-width: 900px;
+  max-width: 960px;
   margin: 24px auto;
-  padding: 16px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
 }
-
 .controls,
 .input-row {
   display: flex;

@@ -33,6 +33,7 @@ def load_contradiction_jsonl(path: Path) -> List[Document]:
                         "id": obj["id"],
                         "source": obj.get("source", "synthetic_contradiction"),
                         "label": obj.get("label"),
+                        "publication_date": obj.get("publication_date"),
                     },
                 )
             )

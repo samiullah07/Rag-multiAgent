@@ -1,0 +1,2 @@
+{"id": "geography_contr_24a", "text": "The Sahara Desert spans approximately 9.2 million square kilometres across eleven North African countries.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:geography_contr_24b"}
+{"id": "geography_contr_24b", "text": "The Sahara Desert spans approximately 3.6 million square miles across ten North African countries.", "source": "travel_guide", "publication_date": "2016-11-01", "label": "contradicts:geography_contr_24a"}

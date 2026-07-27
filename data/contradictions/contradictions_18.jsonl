@@ -1,0 +1,2 @@
+{"id": "history_contr_18a", "text": "The Magna Carta was signed in 1215 in England.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:history_contr_18b"}
+{"id": "history_contr_18b", "text": "The Magna Carta was signed in 1225 in England.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:history_contr_18a"}

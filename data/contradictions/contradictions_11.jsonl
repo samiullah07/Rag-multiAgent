@@ -1,0 +1,2 @@
+{"id": "technology_contr_11a", "text": "The World Wide Web was invented by Tim Berners-Lee in 1989.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:technology_contr_11b"}
+{"id": "technology_contr_11b", "text": "The World Wide Web was invented by Tim Berners-Lee in 1991.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:technology_contr_11a"}

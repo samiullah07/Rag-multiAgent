@@ -1,0 +1,2 @@
+{"id": "geography_contr_05a", "text": "The Nile River is approximately 6,650 kilometers long, making it one of the longest rivers in the world.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:geography_contr_05b"}
+{"id": "geography_contr_05b", "text": "The Nile River is approximately 6,853 kilometers long, making it one of the longest rivers in the world.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:geography_contr_05a"}

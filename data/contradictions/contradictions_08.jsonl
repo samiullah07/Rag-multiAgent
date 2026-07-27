@@ -1,0 +1,2 @@
+{"id": "health_contr_08a", "text": "COVID-19 was first identified in Wuhan, China in December 2019.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:health_contr_08b"}
+{"id": "health_contr_08b", "text": "COVID-19 was first identified in Wuhan, China in November 2019.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:health_contr_08a"}

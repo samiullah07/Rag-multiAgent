@@ -1,0 +1,11 @@
+[     474ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8501/Belief_Timeline/_stcore/health:0
+[     474ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8501/Belief_Timeline/_stcore/host-config:0
+[70839679ms] [WARNING] WebSocket onclose @ http://localhost:8501/static/js/index.dkY5s53S.js:183
+[125844497ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/health:0
+[125844698ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/host-config:0
+[128460243ms] [WARNING] WebSocket onclose @ http://localhost:8501/static/js/index.dkY5s53S.js:183
+[141782470ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/health:0
+[141782484ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/host-config:0
+[143148362ms] [WARNING] WebSocket onclose @ http://localhost:8501/static/js/index.dkY5s53S.js:183
+[143148467ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/health:0
+[143148479ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:8501/Belief_Timeline/_stcore/host-config:0

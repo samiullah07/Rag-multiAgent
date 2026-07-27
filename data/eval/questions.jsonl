@@ -1,0 +1,52 @@
+{"id":"eval_nonconflict_01","ground_truth":"2007","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"When was the first iPhone released?"}
+{"id":"eval_nonconflict_02","ground_truth":"1869","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"Who discovered DNA and in what year?"}
+{"id":"eval_nonconflict_03","ground_truth":"149.6 million kilometers","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"What is the average distance of Earth from the Sun?"}
+{"id":"eval_nonconflict_04","ground_truth":"20%","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"What percentage of oxygen does the Amazon Rainforest produce?"}
+{"id":"eval_nonconflict_05","ground_truth":"100,000","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"How many times does the human heart beat per day?"}
+{"id":"eval_nonconflict_06","ground_truth":"1989","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"When did the Berlin Wall fall?"}
+{"id":"eval_nonconflict_07","ground_truth":"Au","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"What is the chemical symbol for gold?"}
+{"id":"eval_nonconflict_08","ground_truth":"Dmitri Mendeleev","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"Who created the periodic table?"}
+{"id":"eval_nonconflict_09","ground_truth":"11,034","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"How deep is the Mariana Trench in meters?"}
+{"id":"eval_nonconflict_10","ground_truth":"1905","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"What year did Einstein publish the theory of relativity?"}
+{"id":"eval_conflict_01","ground_truth":"299,792,458 meters per second","correct_doc_ids":["science_contr_01a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What is the speed of light in meters per second?"}
+{"id":"eval_conflict_02","ground_truth":"1945","correct_doc_ids":["history_contr_02a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What year did World War II end?"}
+{"id":"eval_conflict_03","ground_truth":"8,848.86 meters","correct_doc_ids":["geography_contr_04a"],"has_conflict":true,"should_flag_uncertain":false,"query":"How tall is Mount Everest?"}
+{"id":"eval_conflict_04","ground_truth":"1919","correct_doc_ids":["history_contr_06a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What year was the Treaty of Versailles signed?"}
+{"id":"eval_conflict_05","ground_truth":"December 2019","correct_doc_ids":["health_contr_08a"],"has_conflict":true,"should_flag_uncertain":false,"query":"When was COVID-19 first identified?"}
+{"id":"eval_conflict_06","ground_truth":"2003","correct_doc_ids":["science_contr_10a"],"has_conflict":true,"should_flag_uncertain":false,"query":"When was the Human Genome Project completed?"}
+{"id":"eval_conflict_07","ground_truth":"1989","correct_doc_ids":["technology_contr_11a"],"has_conflict":true,"should_flag_uncertain":false,"query":"When was the World Wide Web invented?"}
+{"id":"eval_conflict_08","ground_truth":"84.6 years","correct_doc_ids":["health_contr_13a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What is the average life expectancy in Japan?"}
+{"id":"eval_conflict_09","ground_truth":"1967","correct_doc_ids":["health_contr_15a"],"has_conflict":true,"should_flag_uncertain":false,"query":"When was the first human heart transplant performed?"}
+{"id":"eval_conflict_10","ground_truth":"1992","correct_doc_ids":["technology_contr_17a"],"has_conflict":true,"should_flag_uncertain":false,"query":"When was the first SMS text message sent?"}
+{"id":"eval_conflict_11","ground_truth":"Rosalind Franklin","correct_doc_ids":["science_contr_19a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Whose X-ray crystallography work was used to determine the structure of DNA?"}
+{"id":"eval_conflict_12","ground_truth":"21,196 kilometres","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"How long is the Great Wall of China?"}
+{"id":"eval_conflict_13","ground_truth":"Spanish crown","correct_doc_ids":["history_contr_21a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who funded Columbus's 1492 voyage to the Americas?"}
+{"id":"eval_conflict_14","ground_truth":"Douglas Engelbart","correct_doc_ids":["technology_contr_22a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who invented the first computer mouse?"}
+{"id":"eval_conflict_15","ground_truth":"cowpox","correct_doc_ids":["health_contr_23a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Was Jenner's 1796 smallpox vaccine an original invention or based on earlier techniques?"}
+{"id":"eval_conflict_16","ground_truth":"9.2 million square kilometres","correct_doc_ids":["geography_contr_24a"],"has_conflict":true,"should_flag_uncertain":false,"query":"How large is the Sahara Desert and how many countries does it span?"}
+{"id":"eval_conflict_17","ground_truth":"popular uprising","correct_doc_ids":["history_contr_25a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Was the French Revolution a popular uprising or a bourgeois political movement?"}
+{"id":"eval_conflict_18","ground_truth":"PageRank was developed by Page and Brin","correct_doc_ids":["technology_contr_26a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who originally developed the PageRank algorithm used by Google?"}
+{"id":"eval_conflict_19","ground_truth":"maintaining ion gradients","correct_doc_ids":["health_contr_27a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What does the brain primarily use its energy for?"}
+{"id":"eval_conflict_20","ground_truth":"white blood cells","correct_doc_ids":["science_contr_28a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What biological material did Miescher use to first isolate DNA?"}
+{"id":"eval_conflict_21","ground_truth":"2,300 kilometres","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"How long is the Great Barrier Reef?"}
+{"id":"eval_conflict_22","ground_truth":"Wellington and Blucher","correct_doc_ids":["history_contr_30a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who led the forces that defeated Napoleon at Waterloo?"}
+{"id":"eval_conflict_23","ground_truth":"Mark Zuckerberg","correct_doc_ids":["technology_contr_31a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who created Facebook and was it a solo or collaborative effort?"}
+{"id":"eval_conflict_24","ground_truth":"strengthening the heart muscle","correct_doc_ids":["health_contr_32a"],"has_conflict":true,"should_flag_uncertain":false,"query":"How does aerobic exercise reduce cardiovascular disease risk?"}
+{"id":"eval_conflict_25","ground_truth":"Thomas Jefferson","correct_doc_ids":["history_contr_33a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Who was the principal author of the Declaration of Independence?"}
+{"id":"eval_nonconflict_11","ground_truth":"1776","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"In what year was the Declaration of Independence signed?"}
+{"id":"eval_nonconflict_12","ground_truth":"1914","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"When did World War I begin?"}
+{"id":"eval_nonconflict_13","ground_truth":"1998","correct_doc_ids":["technology_contr_07a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What year was Google founded?"}
+{"id":"eval_nonconflict_14","ground_truth":"2004","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"When was Facebook launched?"}
+{"id":"eval_nonconflict_15","ground_truth":"1796","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"What year did Edward Jenner develop the first vaccine?"}
+{"id":"eval_nonconflict_16","ground_truth":"1971","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"Who sent the first email and when?"}
+{"id":"eval_nonconflict_17","ground_truth":"9.2 million square kilometers","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"How large is the Sahara Desert in square kilometers?"}
+{"id":"eval_nonconflict_18","ground_truth":"37.2 trillion","correct_doc_ids":["science_contr_03a"],"has_conflict":true,"should_flag_uncertain":false,"query":"How many cells does the human body contain?"}
+{"id":"eval_ookb_01","ground_truth":"6,371 kilometres","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"What is the radius of the Earth?"}
+{"id":"eval_ookb_02","ground_truth":"Nitrogen","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"What is the most abundant gas in Earth's atmosphere?"}
+{"id":"eval_ookb_03","ground_truth":"1969","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"What year did humans first land on the Moon?"}
+{"id":"eval_ookb_04","ground_truth":"Mandarin Chinese","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"What is the most spoken language in the world by native speakers?"}
+{"id":"eval_ookb_05","ground_truth":"Pacific Ocean","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"out_of_kb":true,"query":"In which ocean is the Bermuda Triangle located?"}
+{"id":"eval_conflict_26","ground_truth":"Voyager 1","correct_doc_ids":["science_contr_34a"],"has_conflict":true,"should_flag_uncertain":false,"query":"What was the first human-made object to leave the solar system?"}
+{"id":"eval_conflict_27","ground_truth":"eleven countries","correct_doc_ids":["geography_contr_24a"],"has_conflict":true,"should_flag_uncertain":false,"query":"How many countries does the Sahara Desert span?"}
+{"id":"eval_conflict_28","ground_truth":"visible from space","correct_doc_ids":["geography_contr_29a"],"has_conflict":true,"should_flag_uncertain":false,"query":"Is the Great Barrier Reef visible from space?"}
+{"id":"eval_nonconflict_19","ground_truth":"visible from space","correct_doc_ids":[],"has_conflict":false,"should_flag_uncertain":false,"query":"Is the Great Wall of China visible from space?"}

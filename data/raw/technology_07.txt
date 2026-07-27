@@ -1,0 +1,27 @@
+﻿# technology - Document 7
+
+This document covers various aspects of technology.
+
+- The first iPhone was released by Apple in 2007 on January 9th at Macworld conference.
+
+- The World Wide Web was invented by Tim Berners-Lee in 1989 while at CERN.
+
+- The first email was sent by Ray Tomlinson in 1971 to himself as a test message.
+
+- Google was founded by Larry Page and Sergey Brin in 1998 in a garage in Menlo Park.
+
+- Facebook was launched by Mark Zuckerberg in 2004 originally for Harvard students.
+
+- The first microprocessor, the Intel 4004, was introduced in 1971 revolutionizing computing.
+
+- The first computer mouse was invented by Douglas Engelbart in 1964 for human-computer interaction.
+
+- The first commercial microprocessor was the Intel 4004 released in 1971 with 2,300 transistors.
+
+- The first domain name symbolics.com was registered in 1985 starting the commercial internet.
+
+- The first SMS message was sent in 1992 saying 'Merry Christmas' on the Vodafone network.
+
+## Summary
+This document provides key information about technology suitable for educational and reference purposes.
+

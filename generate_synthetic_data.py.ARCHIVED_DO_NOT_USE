@@ -1,0 +1,168 @@
+import json
+import random
+from pathlib import Path
+
+BASE_DIR = Path("C:/Users/BEST LAPTOP/Desktop/RAG-gurkirat")
+RAW_DIR = BASE_DIR / "data" / "raw"
+CONTR_DIR = BASE_DIR / "data" / "contradictions"
+EVAL_DIR = BASE_DIR / "data" / "eval"
+
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+CONTR_DIR.mkdir(parents=True, exist_ok=True)
+EVAL_DIR.mkdir(parents=True, exist_ok=True)
+
+topics = {
+    "science": [
+        "The speed of light is 299,792,458 meters per second.",
+        "The Earth-Moon distance is 384,400 kilometers.",
+        "Global warming has risen about 1.2 degrees Celsius since 1880.",
+        "The human body has 37.2 trillion cells approximately.",
+        "The Human Genome Project was completed in 2003.",
+        "The first antibiotic penicillin was discovered in 1928.",
+        "The first heart transplant was performed in 1967.",
+        "The first vaccine was developed in 1796.",
+        "The average human heart beats 100,000 times per day.",
+        "The human brain uses about 20 percent of the body's energy.",
+    ],
+    "history": [
+        "World War II ended in 1945.",
+        "The Berlin Wall fell in 1989.",
+        "The moon landing occurred in 1969.",
+        "The Treaty of Versailles was signed in 1919.",
+        "Columbus reached the Americas in 1492.",
+        "The French Revolution began in 1789.",
+        "The Magna Carta was signed in 1215.",
+        "The Industrial Revolution began around 1760.",
+        "Napoleon was defeated at Waterloo in 1815.",
+        "The Declaration of Independence was signed in 1776.",
+    ],
+    "technology": [
+        "The first iPhone was released in 2007.",
+        "The World Wide Web was invented in 1989.",
+        "The first email was sent in 1971.",
+        "Google was founded in 1998.",
+        "The first microprocessor was introduced in 1971.",
+        "Facebook was launched in 2004.",
+        "The first SMS message was sent in 1992.",
+        "The first domain name symbolics.com was registered in 1985.",
+        "The first computer mouse was invented in 1964.",
+        "The first commercial microprocessor was released in 1971.",
+    ],
+    "health": [
+        "The average human heart beats 100,000 times per day.",
+        "A typical adult has 5 liters of blood.",
+        "The human brain uses 20 percent of the body's energy.",
+        "The first vaccine was developed in 1796.",
+        "COVID-19 was first identified in 2019.",
+        "Regular exercise can reduce heart disease risk by 35 percent.",
+        "The average life expectancy in Japan is 84.6 years.",
+        "Vitamin C deficiency leads to scurvy.",
+        "The first antibiotic penicillin was discovered in 1928.",
+        "The Human Genome Project was completed in 2003.",
+    ],
+    "geography": [
+        "Mount Everest is 8,848.86 meters above sea level.",
+        "The Pacific Ocean covers 165.25 million square kilometers.",
+        "The Nile River is 6,650 kilometers long.",
+        "The Amazon Rainforest produces 20 percent of the world's oxygen.",
+        "The Sahara Desert covers 9.2 million square kilometers.",
+        "The Great Wall of China is 21,196 kilometers long.",
+        "The Statue of Liberty was a gift from France in 1886.",
+        "Australia covers 7.69 million square kilometers.",
+        "The Mariana Trench is 11,034 meters deep.",
+        "The Great Barrier Reef is 2,300 kilometers long.",
+    ],
+}
+
+# Generate 40 raw documents: 8 per topic.
+for topic_name, facts in topics.items():
+    for i in range(8):
+        selected = facts[i : i + 5]
+        lines = [
+            f"# {topic_name.title()} Document {i + 1:02d}",
+            "=" * (len(topic_name) + 18),
+            "",
+            f"This synthetic document covers {topic_name}.",
+            "",
+        ]
+        for fact in selected:
+            lines.append(f"- {fact}")
+        lines.extend(["", "Summary: This is placeholder synthetic content for knowledge base testing."])
+        content = "\n".join(lines)
+        filename = RAW_DIR / f"{topic_name}_{i + 1:02d}.txt"
+        filename.write_text(content, encoding="utf-8")
+
+print(f"Created {len(list(RAW_DIR.glob('*.txt')))} raw documents")
+
+# Generate 15 contradiction pairs.
+pair_count = 15
+all_contradictions = []
+random.seed(42)
+
+for pair in range(1, pair_count + 1):
+    topic_name = random.choice(list(topics.keys()))
+    facts = topics[topic_name]
+    numeric_fact = random.choice(facts)
+    year = None
+    for token in numeric_fact.split():
+        if token.replace(",", "").replace(".", "").isdigit():
+            year = int(token.replace(",", "").replace(".", ""))
+            break
+    if year is None:
+        continue
+
+    offset = random.choice([5, 10, -5, -10])
+    doc1 = {
+        "id": f"{topic_name}_contr_{pair * 2 - 1:03d}",
+        "text": numeric_fact.replace(str(year), str(year - offset)),
+        "source": "synthetic_contradiction",
+        "label": f"contradicts:{topic_name}_contr_{pair * 2:03d}",
+        "publication_date": "2023-01-01",
+    }
+    doc2 = {
+        "id": f"{topic_name}_contr_{pair * 2:03d}",
+        "text": numeric_fact.replace(str(year), str(year + offset)),
+        "source": "synthetic_contradiction",
+        "label": f"contradicts:{topic_name}_contr_{pair * 2 - 1:03d}",
+        "publication_date": "2024-01-01",
+    }
+    all_contradictions.extend([doc1, doc2])
+
+    filename = CONTR_DIR / f"contradictions_{pair:02d}.jsonl"
+    with filename.open("w", encoding="utf-8") as f:
+        f.write(json.dumps(doc1, ensure_ascii=False) + "\n")
+        f.write(json.dumps(doc2, ensure_ascii=False) + "\n")
+
+print(f"Created {len(all_contradictions)} contradiction documents ({pair_count} pairs)")
+
+# Generate 20 evaluation questions.
+eval_questions = [
+    {"id": "eval_nonconflict_01", "query": "When was the first iPhone released?", "ground_truth": "2007", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_02", "query": "How long is the Nile River in kilometers?", "ground_truth": "6650", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_03", "query": "When was the Human Genome Project completed?", "ground_truth": "2003", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_04", "query": "What year did the Berlin Wall fall?", "ground_truth": "1989", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_05", "query": "What is the speed of light in meters per second?", "ground_truth": "299,792,458", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_06", "query": "How many liters of blood does a typical adult have?", "ground_truth": "5", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_07", "query": "When was COVID-19 first identified?", "ground_truth": "2019", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_08", "query": "How many times does the average human heart beat per day?", "ground_truth": "100,000", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_09", "query": "What year was the Treaty of Versailles signed?", "ground_truth": "1919", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+    {"id": "eval_nonconflict_10", "query": "What year was the first microprocessor introduced?", "ground_truth": "1971", "has_conflict": False, "should_flag_uncertain": False, "correct_doc_ids": []},
+]
+
+for pair in range(1, pair_count + 1):
+    topic_name = list(topics.keys())[pair % len(topics)]
+    eval_questions.append({
+        "id": f"eval_conflict_{pair:02d}",
+        "query": f"What is the disputed year or value for {topic_name}?",
+        "ground_truth": "varies",
+        "has_conflict": True,
+        "should_flag_uncertain": False,
+        "correct_doc_ids": [f"{topic_name}_contr_{pair * 2:03d}"],
+    })
+
+with (EVAL_DIR / "questions.jsonl").open("w", encoding="utf-8") as f:
+    for q in eval_questions:
+        f.write(json.dumps(q, ensure_ascii=False) + "\n")
+
+print(f"Created {len(eval_questions)} evaluation questions")
+print("Synthetic data generation completed successfully")

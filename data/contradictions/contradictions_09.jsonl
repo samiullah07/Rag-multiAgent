@@ -1,0 +1,2 @@
+{"id": "geography_contr_09a", "text": "The Pacific Ocean covers approximately 165.25 million square kilometers.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:geography_contr_09b"}
+{"id": "geography_contr_09b", "text": "The Pacific Ocean covers approximately 155 million square kilometers.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:geography_contr_09a"}

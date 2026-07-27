@@ -1,0 +1,2 @@
+{"id": "health_contr_15a", "text": "The first human heart transplant was performed by Christiaan Barnard in 1967.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:health_contr_15b"}
+{"id": "health_contr_15b", "text": "The first human heart transplant was performed by Christiaan Barnard in 1968.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:health_contr_15a"}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "eval_nonconflict_01",
+    "query": "When was the first iPhone released?",
+    "answer": "The first iPhone was released by Apple in 2007 on January 9th at the Macworld conference.",
+    "ground_truth": "2007",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 9.01230788230896
+  },
+  {
+    "id": "eval_nonconflict_02",
+    "query": "Who discovered DNA and in what year?",
+    "answer": "DNA was first discovered by Friedrich Miescher in 1869 while studying white blood cells.",
+    "ground_truth": "1869",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 11.094263553619385
+  },
+  {
+    "id": "eval_nonconflict_03",
+    "query": "What is the average distance of Earth from the Sun?",
+    "answer": "Unfortunately, the provided context does not contain information about the average distance of Earth from the Sun.",
+    "ground_truth": "149.6 million kilometers",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 11.031325101852417
+  },
+  {
+    "id": "eval_nonconflict_04",
+    "query": "What percentage of oxygen does the Amazon Rainforest produce?",
+    "answer": "The Amazon Rainforest produces about 20% of the world's oxygen through photosynthesis.",
+    "ground_truth": "20%",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 9.492941856384277
+  },
+  {
+    "id": "eval_nonconflict_05",
+    "query": "How many times does the human heart beat per day?",
+    "answer": "The human heart beats about 100,000 times per day throughout a lifetime.",
+    "ground_truth": "100,000",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 10.418632745742798
+  },
+  {
+    "id": "eval_nonconflict_06",
+    "query": "When did the Berlin Wall fall?",
+    "answer": "The Berlin Wall fell in 1989 on November 9th.",
+    "ground_truth": "1989",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 10.612614870071411
+  },
+  {
+    "id": "eval_nonconflict_07",
+    "query": "What is the chemical symbol for gold?",
+    "answer": "Unfortunately, I am uncertain about the chemical symbol for gold as it is not mentioned in the provided context.",
+    "ground_truth": "Au",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 11.589810609817505
+  },
+  {
+    "id": "eval_nonconflict_08",
+    "query": "Who created the periodic table?",
+    "answer": "The periodic table was created by Dmitri Mendeleev in 1869, organizing elements by atomic weight and properties.",
+    "ground_truth": "Dmitri Mendeleev",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 11.4960355758667
+  },
+  {
+    "id": "eval_nonconflict_09",
+    "query": "How deep is the Mariana Trench in meters?",
+    "answer": "The Mariana Trench is the deepest part of the world's oceans, reaching 11,034 meters deep.",
+    "ground_truth": "11,034",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 10.616692304611206
+  },
+  {
+    "id": "eval_nonconflict_10",
+    "query": "What year did Einstein publish the theory of relativity?",
+    "answer": "Albert Einstein published the theory of relativity in 1905 in his annus mirabilis papers.",
+    "ground_truth": "1905",
+    "has_conflict_gold": false,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 12.25479793548584
+  },
+  {
+    "id": "eval_conflict_01",
+    "query": "What is the speed of light in meters per second?",
+    "answer": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+    "ground_truth": "299,792,458 meters per second",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.136486768722534
+  },
+  {
+    "id": "eval_conflict_02",
+    "query": "What year did World War II end?",
+    "answer": "Based on the provided context, I am uncertain about the exact year World War II ended, as there are conflicting information in the sources. However, one source (Doc id=history_02, Source=real_world) states that World War II ended in 1945 with the unconditional surrender of Germany in May and Japan in September.",
+    "ground_truth": "1945",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.199317693710327
+  },
+  {
+    "id": "eval_conflict_03",
+    "query": "How tall is Mount Everest?",
+    "answer": "Mount Everest stands at 8,848.86 meters above sea level.",
+    "ground_truth": "8,848.86 meters",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.436445713043213
+  },
+  {
+    "id": "eval_conflict_04",
+    "query": "What year was the Treaty of Versailles signed?",
+    "answer": "The Treaty of Versailles was signed in 1919, formally ending World War I.",
+    "ground_truth": "1919",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 3.9433581829071045
+  },
+  {
+    "id": "eval_conflict_05",
+    "query": "When was COVID-19 first identified?",
+    "answer": "I am able to provide a factual answer based on the available information. \n\nCOVID-19 was first identified in Wuhan, China in December 2019.",
+    "ground_truth": "December 2019",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 3.9343459606170654
+  },
+  {
+    "id": "eval_conflict_06",
+    "query": "When was the Human Genome Project completed?",
+    "answer": "I have found multiple sources with conflicting information. However, the Human Genome Project was completed in either 2001 or 2003.",
+    "ground_truth": "2003",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.051367521286011
+  },
+  {
+    "id": "eval_conflict_07",
+    "query": "When was the World Wide Web invented?",
+    "answer": "According to the provided context, the World Wide Web was invented by Tim Berners-Lee in 1989.",
+    "ground_truth": "1989",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.085264205932617
+  },
+  {
+    "id": "eval_conflict_08",
+    "query": "What is the average life expectancy in Japan?",
+    "answer": "I am uncertain about the exact source of the information, but based on the provided context, the average life expectancy in Japan is approximately 84.6 years.",
+    "ground_truth": "84.6 years",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.210009574890137
+  },
+  {
+    "id": "eval_conflict_09",
+    "query": "When was the first human heart transplant performed?",
+    "answer": "I am uncertain about the exact year of the first human heart transplant from the provided context. However, based on the information from Doc id=health_contr_15a and Doc id=health_contr_15b, it appears that there is a discrepancy between the sources. Doc id=health_contr_15a (encyclopedia) states that the first human heart transplant was performed by Christiaan Barnard in 1967, while Doc id=health_contr_15b (blog_post) states that it was performed in 1968.",
+    "ground_truth": "1967",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.1491100788116455
+  },
+  {
+    "id": "eval_conflict_10",
+    "query": "When was the first SMS text message sent?",
+    "answer": "I am uncertain about the exact date of the first SMS text message sent, as there are conflicting information sources. However, based on the provided context, the most reliable sources suggest that the first SMS text message was sent in 1992.",
+    "ground_truth": "1992",
+    "has_conflict_gold": true,
+    "has_conflict_system": false,
+    "chosen_doc_ids": [],
+    "flagged_uncertain": false,
+    "runtime": 4.753300189971924
+  }
+]

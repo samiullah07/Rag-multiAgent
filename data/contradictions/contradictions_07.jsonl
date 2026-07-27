@@ -1,0 +1,2 @@
+{"id": "technology_contr_07a", "text": "Google was founded in 1998 by Larry Page and Sergey Brin.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:technology_contr_07b"}
+{"id": "technology_contr_07b", "text": "Google was founded in 1996 by Larry Page and Sergey Brin.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:technology_contr_07a"}

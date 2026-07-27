@@ -1,0 +1,2 @@
+{"id": "science_contr_01a", "text": "The speed of light in a vacuum is exactly 299,792,458 meters per second.", "source": "encyclopedia", "publication_date": "2024-01-01", "label": "contradicts:science_contr_01b"}
+{"id": "science_contr_01b", "text": "The speed of light in a vacuum is approximately 300,000,000 meters per second.", "source": "blog_post", "publication_date": "2015-06-01", "label": "contradicts:science_contr_01a"}
