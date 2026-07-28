@@ -2,7 +2,7 @@
 
 **Self-correcting Retrieval-Augmented Generation with automatic contradiction detection, resolution, and citation grounding**
 
-> MSc Computer Science Project — Gurkirat  
+> MSc Computer Science Project  
 > Stack: Python 3.13 · LangGraph · ChromaDB · Groq (Llama 3.3-70B) · HuggingFace Embeddings · Streamlit
 
 ---
