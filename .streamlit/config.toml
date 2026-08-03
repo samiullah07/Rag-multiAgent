@@ -1,2 +1,15 @@
 [server]
 fileWatcherType = "poll"
+
+[theme]
+# Force a dark base theme so Streamlit's own native widget text (labels,
+# expander titles, selectbox values, help text) renders in light colours
+# against the dark aurora background. Without this, Streamlit falls back to
+# its light-theme text colour (near-black), which disappears on the dark
+# background — the cause of the "hidden text" problem.
+base = "dark"
+primaryColor = "#8b5cf6"
+backgroundColor = "#0b0f1a"
+secondaryBackgroundColor = "#161b2e"
+textColor = "#e8ebf5"
+font = "sans serif"

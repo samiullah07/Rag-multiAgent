@@ -98,7 +98,7 @@ div[data-testid="stExpander"] summary{ font-weight:600; }
 /* KPI cards */
 .kpi-row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:6px; }
 .kpi-card{ flex:1; min-width:110px; border-radius:14px; padding:12px 14px; color:white; box-shadow:0 6px 18px rgba(0,0,0,0.28); }
-.kpi-label{ font-size:0.68rem; opacity:0.9; text-transform:uppercase; letter-spacing:0.5px; }
+.kpi-label{ font-size:0.68rem; opacity:1; text-transform:uppercase; letter-spacing:0.5px; font-weight:700; }
 .kpi-value{ font-size:1.45rem; font-weight:800; }
 
 /* Document cards */
@@ -136,6 +136,57 @@ div[data-testid="stExpander"] summary{ font-weight:600; }
 }
 
 .download-section { margin-top: 1.2rem; }
+
+/* ------------------------------------------------------------------ */
+/* Force Streamlit's OWN native widget text to be readable on the dark  */
+/* background. These target Streamlit's internal elements, whose default */
+/* text colour is otherwise near-black and vanishes on the dark theme.   */
+/* ------------------------------------------------------------------ */
+
+/* Widget labels: "Top K Results", "Strategy", "Model", etc. */
+label, .stSelectbox label, .stNumberInput label, .stTextInput label,
+.stSlider label, [data-testid="stWidgetLabel"], [data-testid="stWidgetLabel"] p{
+  color:#e8ebf5 !important;
+  font-weight:600 !important;
+  opacity:1 !important;
+}
+
+/* Selectbox / number input displayed VALUE text (was dark-on-dark) */
+.stSelectbox div[data-baseweb="select"] *,
+[data-baseweb="select"] span,
+.stNumberInput input,
+.stTextInput input{
+  color:#e8ebf5 !important;
+}
+.stNumberInput input, .stTextInput input{
+  background:rgba(255,255,255,0.06) !important;
+}
+
+/* Dropdown menu popover items */
+[data-baseweb="popover"] li, [data-baseweb="menu"] li{
+  color:#e8ebf5 !important;
+}
+
+/* Expander header titles: "Settings", "Evaluation metrics", etc. */
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary *,
+div[data-testid="stExpander"] p{
+  color:#e8ebf5 !important;
+}
+
+/* General body text from st.write / st.markdown / st.caption */
+.stMarkdown, .stMarkdown p, [data-testid="stMarkdownContainer"] p,
+.stCaption, [data-testid="stCaptionContainer"]{
+  color:#dfe3f0 !important;
+}
+
+/* st.info / st.success / st.warning boxes */
+[data-testid="stAlert"], [data-testid="stAlert"] *{
+  color:#e8ebf5 !important;
+}
+
+/* Help-icon tooltip trigger stays visible */
+[data-testid="stTooltipIcon"] svg{ fill:#9aa3bd !important; }
 </style>
 """,
     unsafe_allow_html=True,
@@ -423,7 +474,7 @@ with col3:
 
             cards = []
             if recall is not None:
-                cards.append(kpi_card("Recall", f"{recall:.2f}", "linear-gradient(135deg,#6366f1,#3b82f6)"))
+                cards.append(kpi_card("Recall", f"{recall:.2f}", "linear-gradient(135deg,#5558d4,#3b82f6)"))
             if precision is not None:
                 cards.append(kpi_card("Precision", f"{precision:.2f}", "linear-gradient(135deg,#14b8a6,#22c55e)"))
             if cards:
@@ -538,7 +589,7 @@ with col3:
                         f'margin-bottom:8px;padding:8px 10px;border-radius:10px;'
                         f'background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08)">'
                         f'<span style="font-size:1.1rem;min-width:22px">{icon}</span>'
-                        f'<div><div style="font-size:0.75rem;font-weight:700;color:#8b5cf6;'
+                        f'<div><div style="font-size:0.75rem;font-weight:700;color:#a78bfa;'
                         f'text-transform:uppercase;letter-spacing:0.5px">{esc(agent.replace("_"," "))}</div>'
                         f'<div style="font-size:0.85rem;color:#cbd5e1;margin-top:2px">{esc(summary)}</div></div>'
                         f'</div>',

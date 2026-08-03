@@ -56,7 +56,7 @@ CONFIGS = [
     },
     {
         "name": "baseline",
-        "description": "2-stage baseline (retrieve → generate only)",
+        "description": "2-stage baseline (retrieve -> generate only)",
         "build_kwargs": None,  # sentinel: use baseline graph
     },
 ]
@@ -181,22 +181,28 @@ def main():
 
     for cfg in CONFIGS:
         name = cfg["name"]
+        out_path = OUT_DIR / f"ablation_{name}.json"
         print(f"\n{'='*60}")
-        print(f"  CONFIG: {name} — {cfg['description']}")
+        print(f"  CONFIG: {name} - {cfg['description']}")
         print(f"{'='*60}")
 
-        if cfg["build_kwargs"] is None:
-            app = build_baseline_app()
+        if out_path.exists():
+            print(f"  [RESUME] Loading cached results from {out_path}")
+            records = json.loads(out_path.read_text(encoding="utf-8"))
+            metrics = compute_all_metrics(records, questions)
         else:
-            app = build_multi_agent_app(**cfg["build_kwargs"])
+            if cfg["build_kwargs"] is None:
+                app = build_baseline_app()
+            else:
+                app = build_multi_agent_app(**cfg["build_kwargs"])
 
-        records = run_config(app, questions, is_baseline=(name == "baseline"))
-        metrics = compute_all_metrics(records, questions)
+            records = run_config(app, questions, is_baseline=(name == "baseline"))
+            metrics = compute_all_metrics(records, questions)
 
-        # Save per-config records
-        (OUT_DIR / f"ablation_{name}.json").write_text(
-            json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+            # Save per-config records
+            out_path.write_text(
+                json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
 
         all_results.append({
             "name": name,
@@ -221,7 +227,7 @@ def main():
 
     # Print comparison table
     print(f"\n\n{'='*60}")
-    print("  ABLATION STUDY — COMPARISON TABLE")
+    print("  ABLATION STUDY - COMPARISON TABLE")
     print(f"{'='*60}\n")
     print_table(all_results)
     print(f"\n  Results saved to data/eval/ablation_summary.json")
