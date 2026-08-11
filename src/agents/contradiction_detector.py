@@ -111,11 +111,25 @@ _spacy_nlp = None
 
 
 def _get_spacy():
-    """Lazy-load spaCy English model for POS tagging."""
+    """Lazy-load spaCy English model for POS tagging.
+
+    Self-healing: if en_core_web_sm is missing (spaCy E050 OSError, e.g. on
+    Streamlit Cloud where the model is not guaranteed to be installed), download
+    it at runtime and retry. The module-level cache keeps this to at most one
+    download per process.
+    """
     global _spacy_nlp
     if _spacy_nlp is None:
         import spacy
-        _spacy_nlp = spacy.load("en_core_web_sm")
+
+        try:
+            _spacy_nlp = spacy.load("en_core_web_sm")
+        except OSError:
+            # Model not installed — install it on the fly, then retry the load.
+            from spacy.cli import download
+
+            download("en_core_web_sm")
+            _spacy_nlp = spacy.load("en_core_web_sm")
     return _spacy_nlp
 
 
