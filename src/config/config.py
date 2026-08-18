@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     tavily_api_key: str | None = None
     # Groq LLM configuration
     groq_api_key: str
-    groq_model: str = "llama-3.3-70b-versatile"  # updated, supported model
+    groq_model: str = "openai/gpt-oss-120b"  # active Groq model
 
     # Embeddings configuration (local, Hugging Face)
     embedding_model: str = "BAAI/bge-small-en-v1.5"
